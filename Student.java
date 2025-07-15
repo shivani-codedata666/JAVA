@@ -1,6 +1,9 @@
-import java.util.Scanner;
+
 
 public class Student {
+    public static void main(String[] args) {
+
+    }
     String name;
     String address;
     int[] marks = new int[5];
