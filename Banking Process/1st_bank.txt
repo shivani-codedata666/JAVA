@@ -1,0 +1,17 @@
+public class bank_obj {
+
+
+    public class Online_Banking {
+        public static void main(String[] args) {
+
+           Bank_transaction obj=new Bank_transaction();
+
+
+            obj.UserCheck();
+            obj.Account_type();
+            obj.Process();
+
+
+        }
+    }
+}

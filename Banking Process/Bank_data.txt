@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Bank_data{
+    Scanner sc=new Scanner(System.in);
+    String New_user, username = "Shivani";
+    int password = 121, account_no = 987654321;
+   boolean new_create;
+
+    long new_phoneNO, phoneNumber = 234567890;
+    long new_addar, Addar_no = 345789;
+    String new_pan, pancard = "ABC12345S";
+    String new_address, Address = "Bhopkhel pune 411031";
+
+    boolean login;
+    int type, choice, New_accNo, newPassword, confirmPassword;
+
+    char check;
+    double min_balance = 2000.00;
+    double amount;
+}
