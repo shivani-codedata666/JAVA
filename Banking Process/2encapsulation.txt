@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class customer1 extends Bank {
+
+    Scanner sc=new Scanner(System.in);
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+        customer1 obj=new customer1();
+        obj.bank_transaction();
+        obj.display();
+    }
+
+    public void bank_transaction()
+    {
+        System.out.println("Enter your account number");
+        ac_no=sc.nextInt();
+        System.out.println("Enter your pin no");
+        int pinno=sc.nextInt();
+
+        if(pinno==getPin_no())
+        {
+            System.out.println("1:Dep \n2: with");
+            int choice=sc.nextInt();
+            System.out.println("Enter the amount");
+            amount=sc.nextInt();
+            if(choice==1)
+            {
+                int my_balance=getAc_balance();
+                my_balance+=amount;
+                setAc_balance(my_balance);
+
+            }
+            else
+            {
+                if(getAc_balance()>amount)
+                {
+                    int my_balance=getAc_balance();
+                    my_balance-=amount;
+                    setAc_balance(my_balance);
+                }
+                else
+                {
+                    System.out.println("Insufficient balance");
+                }
+            }
+        }
+
+    }
+
+
+    public void display()
+    {
+        System.out.println("The Ac nu is = "+ac_no);
+        System.out.println("Balance= "+getAc_balance());
+    }
+
+}
+
