@@ -1,0 +1,35 @@
+package Assginments;
+import java.util.Scanner;
+
+public class salary {
+    public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            int choice = -1;
+
+            while (choice == -1) {
+                System.out.print("Enter the basic salary of the employee: ");
+                double basicSalary = scanner.nextDouble();
+
+                double hra, da, grossSalary;
+
+
+                if (basicSalary > 15000) {
+                    hra = 0.20 * basicSalary; //20%
+                    da = 0.60 * basicSalary; //60%
+                } else {
+                    hra = 3000;                // Fixed HRA
+                    da = 0.70 * basicSalary;   // 70%
+                }
+
+                grossSalary = basicSalary + hra + da;
+
+                System.out.println("Gross Salary = " + grossSalary);
+
+
+                System.out.print("Enter -1 to calculate for another employee, any other number to exit: ");
+                choice = scanner.nextInt();
+            }
+
+            System.out.println("Program ended.");
+        }
+    }

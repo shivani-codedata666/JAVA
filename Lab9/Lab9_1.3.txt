@@ -1,0 +1,14 @@
+package pack_2;
+
+public class Bike extends vehicle {
+
+    Bike(String make, String model, int year, int maximumSpeed) {
+        super(make, model, year, maximumSpeed);
+    }
+
+
+    @Override
+    void drive() {
+        System.out.println(make + " " + model + " Bike is driving.");
+    }
+}

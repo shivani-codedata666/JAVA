@@ -1,0 +1,18 @@
+package pack_2;
+
+public class Main {
+
+        public static void main(String[] args) {
+            // Create Car object
+            Car car = new Car("Toyota", "Camry", 2022, 220);
+            System.out.println("--- Car Details ---");
+            car.printDetails();
+            car.drive();
+
+            // Create Bike object
+            Bike bike = new Bike("Honda", "CBR500R", 2021, 180);
+            System.out.println("\n--- Bike Details ---");
+            bike.printDetails();
+            bike.drive();
+        }
+    }

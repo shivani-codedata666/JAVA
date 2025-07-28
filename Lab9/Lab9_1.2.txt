@@ -1,0 +1,13 @@
+package pack_2;
+class Car extends vehicle {
+
+    Car(String make, String model, int year, int maximumSpeed) {
+        super(make, model, year, maximumSpeed); // Call to super class constructor
+    }
+
+
+    @Override
+    void drive() {
+        System.out.println(make + " " + model + " Car is driving.");
+    }
+}

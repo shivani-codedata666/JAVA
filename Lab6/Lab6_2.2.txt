@@ -1,0 +1,19 @@
+package pack;
+
+public class Main_class {
+
+        public static void main(String[] args) {
+
+            Student s1 = new Student();
+
+            Student s2 = new Student("Aarav", 19);
+
+
+            Student s3 = new Student("Priya", 21, "Computer Science");
+
+
+            s1.printDetails();
+            s2.printDetails();
+            s3.printDetails();
+        }
+    }

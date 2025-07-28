@@ -1,0 +1,16 @@
+package pack_2;
+
+public class Square extends Shape {
+    private int length;
+
+    // Constructor
+    public Square(int length) {
+        this.length = length;
+    }
+
+    // Override getArea() method
+    @Override
+    public double getArea() {
+        return length * length;
+    }
+}

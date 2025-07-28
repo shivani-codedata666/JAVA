@@ -1,0 +1,7 @@
+package Assginments;
+
+abstract  class Shape {
+
+        // Abstract method
+        abstract double calculateArea();
+    }

@@ -1,0 +1,46 @@
+package pack_2;
+
+public class BankAccount  implements BankOperations {
+    private String accountHolderName;
+    private String bankName;
+    private double accountBalance;
+
+    // Constructor
+    public BankAccount(String accountHolderName, String bankName, double initialBalance) {
+        this.accountHolderName = accountHolderName;
+        this.bankName = bankName;
+        this.accountBalance = initialBalance;
+    }
+
+    // Get current balance
+    public double getBalance() {
+        return accountBalance;
+    }
+
+    // Deposit method
+    public void deposit(double amount) {
+        if (amount > 0) {
+            accountBalance += amount;
+            System.out.println(accountHolderName + " deposited ₹" + amount + " to " + bankName);
+        } else {
+            System.out.println("Invalid deposit amount.");
+        }
+    }
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= accountBalance) {
+            accountBalance -= amount;
+            System.out.println(accountHolderName + " withdrew ₹" + amount + " from " + bankName);
+        } else {
+            System.out.println("Invalid or insufficient balance for withdrawal.");
+        }
+    }
+
+    // Display account info
+    public void displayInfo() {
+        System.out.println("Account Holder: " + accountHolderName);
+        System.out.println("Bank: " + bankName);
+        System.out.println("Balance: ₹" + accountBalance);
+        System.out.println("---------------------------");
+    }
+}
+

@@ -1,0 +1,22 @@
+package Assginments;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Circle input
+        System.out.print("Enter radius of circle: ");
+        double radius = scanner.nextDouble();
+        Shape circle = new Circle(radius);
+
+        // Rectangle input
+        System.out.print("Enter length of rectangle: ");
+        double length = scanner.nextDouble();
+        System.out.print("Enter width of rectangle: ");
+        double width = scanner.nextDouble();
+        Shape rectangle = new Rectangle(length, width);
+    }
+}

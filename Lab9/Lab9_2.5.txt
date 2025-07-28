@@ -1,0 +1,12 @@
+package pack_2;
+public class Shapetest {
+        public static void main(String[] args) {
+            Shape circle = new Circle(5);
+            Shape square = new Square(4);
+            Shape rectangle = new Rectangle(3, 6);
+
+            System.out.println("Area of Circle: " + circle.getArea());
+            System.out.println("Area of Square: " + square.getArea());
+            System.out.println("Area of Rectangle: " + rectangle.getArea());
+        }
+    }
